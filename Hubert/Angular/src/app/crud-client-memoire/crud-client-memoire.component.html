@@ -1,0 +1,11 @@
+<div>
+  <table>
+    <tr *ngFor="let c of clients; let i=index">
+      <td>{{c.prenom}}</td>
+      <td>{{c.nom}}</td>
+      <td>{{c.ca}}</td>
+      <td><a [routerLink]="['/crudEditClient',i]">editer</a></td>
+      <td><button (click)="delete(i)">supprimer</button></td>
+    </tr>
+  </table>
+</div>

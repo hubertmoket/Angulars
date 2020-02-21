@@ -1,0 +1,49 @@
+<!--<div id="a">-->
+<!--&lt;!&ndash;  recuperer les info de l'objet dans un seul sens&ndash;&gt;-->
+<!--<h1>hello {{title.prenom}} {{title.nom}}</h1>-->
+<!--</div>-->
+<!--&lt;!&ndash;  recupere la modification au niveau du view et de l'inserer dans le model&ndash;&gt;-->
+<!--  <input [(ngModel)]="title.prenom">-->
+<!--  <input [(ngModel)]="title.nom">-->
+
+<!--<div id="b">-->
+<!--  <button (click)="hello()">cliquer ici</button>-->
+<!--  <h2>{{message}}</h2>-->
+
+<!--</div>-->
+<!--&lt;!&ndash;selection de couleur&ndash;&gt;-->
+<!--<app-couleur></app-couleur>-->
+
+<!--selector client-->
+<!--<app-client></app-client>-->
+
+<!--selector-->
+<!--<p app-asc-bold>le contenu</p>-->
+
+<!--<app-sortie (evenement)="methode($event)"></app-sortie>-->
+<!--<br>-->
+<!--<app-equipe></app-equipe>-->
+<!--<app-equipes></app-equipes>-->
+
+<!--<div appTest>une div</div>-->
+
+<!--<a appTest href="google.fr">google</a>-->
+
+<!--<app-clients></app-clients>-->
+
+<header>Mon super header</header>
+<nav>
+  <ul id="menu">
+    <li><a [routerLink]="['/equipes']" routerLinkActive="active">Equipes</a></li>
+    <li><a [routerLink]="['clients']" routerLinkActive="active">Clients</a></li>
+    <li><a [routerLink]="['param','olivier']" routerLinkActive="active">Param</a></li>
+  </ul>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<footer>
+  mon footer
+</footer>

@@ -1,0 +1,24 @@
+<br>
+<div class="container">
+  Filtre : <input [(ngModel)]="filtre">
+  <h2>Tous les clients </h2>
+  <table border="1">
+    <tr>
+      <td>Prenom</td>
+      <td>Nom</td>
+      <td>CA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr *ngFor="let c of listeClient()">
+      <td>{{ c.prenom }}</td>
+      <td>{{ c.nom }}</td>
+      <!--j'ai appliqué le pipe person pour afficher et cacher la valeur-->
+      <td>{{ c.ca|perso }}</td>
+      <td><button>Editer</button></td>
+      <td><button>Supprimer</button></td>
+    </tr>
+  </table>
+  <hr>
+  <app-client (enregistrer)="ajoutClient($event)"></app-client>
+</div>

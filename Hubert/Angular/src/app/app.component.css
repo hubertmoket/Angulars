@@ -1,0 +1,11 @@
+#a{
+    background-color: #a57e1a;
+  }
+
+#b{
+  background-color: #a5241a;
+}
+
+#menu>li{
+  display: inline-block;
+}
